@@ -1,0 +1,300 @@
+/* Q0: All the elements have margin of 0 from the top, bottom, left, and right */
+
+*
+{
+    margin: 0;
+}
+
+
+/* Q1: All the HTML5 new elements (The new semantic elements) that you have used in your code should be
+displayed as block-level elements (for old browsers that don’t support them), so make sure to
+follow/add the rule for that. (Please check my in-class notes/code) */
+
+header, nav, footer 
+{
+    display: block;
+
+/* Q5: Style the “header, nav, and footer” elements to share the following:
+        a. Any Dark/Light background colour*/
+        background-color: #ff00002b; /* Dark or light background color */
+        
+/*      b. Any Dark/Light foreground colour (normal font colour)*/
+        color: #ffff00b5;
+
+}
+
+
+/* Q2: The <body> element has to be styled with:
+        a. Any colour you prefer for the text*/
+
+        body {
+            color: #ffffff; 
+          
+/*      b. A background image, you can use any one from the 7 samples of dark-woodx.jpg. So, pick the
+one that reflects the colour of your website.*/
+
+        background-image: url('../assets/images/dark-wood1.jpg');
+  
+
+
+/*      c. The font family (face) is at least 3 options of any sans-serif fonts*/
+        font-family: Arial, Helvetica, sans-serif; /* You can add more fonts as needed */
+
+/*      d. Margin 0 for all the four sides (top, bottom, left, right)*/
+        margin: 0;
+        }
+
+/* Q3: Style the <div> element with class “container” (it’s the main division that contains the entire HTML
+elements inside the body)*/
+
+/*      a. The width value can be 950px You can also use max-width: 1300px or any other value (Up
+to you) but using 950px is better for this lab-work because the width of the banner image*/
+            div{
+                width: 950px;
+            
+
+/*b. 5px margin from top and bottom*/
+
+            /* 5px margin from top and bottom, auto for centering horizontally */
+            margin: 5px auto;
+
+/*c. The div has to be aligned centered based in the browser window (about the left/right margins).
+Using the CSS trick to center a block level element*/
+            
+            /* adding the auto attribute to the margin CSS rule did the trick */
+
+/* d. Apply any background colour that you prefer */
+                background-color:  #4d1300;
+            }
+
+/* Q4: Style any element with class value of “content”, in other word target the class named “content"*/
+
+/*      a. The line height (of the text) should be 1.4em*/
+
+            .content {
+                /* Set the line height, the distance between two texts, to 1.4em */
+                line-height: 1.4em;
+                
+                /* 10px padding on all sides */
+                padding: 10px; 
+              }
+
+
+/*      b. 10px padding to all the sides*/
+
+/* Q6: Style the unordered list element <ul> which is inside <nav> element (styling only a ul child of any nav
+element)*/
+            /* Style an unordered list <ul> that is a child of a <nav> */
+            nav ul {
+                /*a. 0 margin from all the sides*/
+                margin: 0;
+
+                /*b. 5px padding from all the sides*/
+                padding: 5px;
+            }
+
+/* Q7: Style the list items <li> of the main navigation (nav), or inside the nav element*/
+            nav li{
+
+/*      a. To be displayed horizontally (Remember that <li> is a block-level element) */
+                display: flex;
+/*      b. Adding margin of 40px to the right of each list item */
+                margin-right: 40px;
+
+/*      c. All the navigation items should be displayed as Uppercase */
+                text-transform: uppercase;
+            }
+
+            /* Normal link (unvisited) */
+
+
+/* Q8: Add the 4 pseudo classes effect to the anchor tags/elements of the main navigation list items, the
+colour should be changed (Use any colours you like/prefer):
+a. The normal link --> :link
+b. The visited link --> :visited
+c. The hover link --> :hover
+d. The active link --> :active */
+
+/*      a. Add CSS styles to the anchor tags (<a>) within the main navigation list items for the four pseudo-classes, :link, :visited, :hover,
+ and :active */
+                nav a:link {
+                color: #3366cc; /* Change color for unvisited links */
+                text-decoration: none; /* Remove underline */
+                }
+
+/*      b. Visited link */
+                nav a:visited {
+                color: #6633cc; /* Change color for visited links */
+                text-decoration: none; /* Remove underline */
+                }
+
+/*      c. Hover link */
+                nav a:hover {
+                color: #cc3366; /* Change color on hover */
+                text-decoration: underline; /* Add underline on hover */
+                }
+
+/*          d. Active link (when clicked) */
+                nav a:active {
+                color: #cc6633; /* Change color for active links (when clicked) */
+                text-decoration: none; /* Remove underline */
+                }
+
+/* Q9. Style any anchor <a> element */
+
+a {  
+/*      a. Any colour you like */
+        color: #fbff00;  
+
+/*      b. No underline */
+        text-decoration: none; /* This removes the underline */
+}
+
+
+/* Q10. Style the three headings: h1, h2, and h3:
+a. To have margin of 10px for all the sides
+b. With Uppercase letters
+c. Different dark/light colour */
+
+h1{
+    margin: 10px;
+    text-transform: uppercase;
+    color: #d900ff;
+}
+
+h2{
+    margin: 10px;
+    text-transform: uppercase;
+    color: #2fd2ff;
+}
+
+h3{
+    margin: 10px;
+    text-transform: uppercase;
+    color: #adff2f;
+
+}
+
+/* Style the custom class "img-centre" */
+.img-centre {
+    display: block; /* Make the image a block-level element */
+    margin: 5px auto; /* 5px margin from top and bottom, auto for horizontal centering */
+    padding: 2px; /* 2px padding to all sides */
+  }
+
+
+/* Q12. Style the <audio> and <video> elements */
+
+
+audio, video {
+/* a. Centre any audio or video element (horizontally)
+[Don’t forget that video/audio are both inline elements] */
+display: block; /* To make them block-level elements */
+
+/*b. With margin of 10px from the top and bottom */
+margin: 10px auto; /* Center horizontally and add margin */
+}
+
+/* 13. Style any <table> element */
+table{
+    /* a. The width is 800px */
+    width: 800px;
+
+    /* b. Centre the table horizontally with 10px of margining from the top and bottom sides */
+    margin: 10px auto;
+
+    /* c. The table border has to be collapsed */
+    border-collapse: collapse;     /* Collapse table borders */
+}
+
+
+
+/* Q14. Style both the <td> and <th> element of any table */
+
+table td, table th{
+    /* a. Having a border with any settings you like */
+    border: 2.5px solid #e11010; /* Set a border with a color of your choice */
+
+    /* b. Padding of 2px from the top/bottom and 5px from the left/right */
+    padding: 2px 5px; /* Add padding of 2px from top/bottom and 5px from left/right */
+
+    /* c. Any background colour (light/dark */
+    background-color: #808080; /* Set a background color of your choice */
+}
+
+
+/* Q15. Style both the <th> inside any table and the <td> inside the <tfoot>:
+a. With Uppercase letters
+b. Any background colour (dark/light)
+c. Any colour (dark/light) */
+
+/* Style <th> inside any table */
+table th {
+    text-transform: uppercase; /* Convert text to uppercase */
+    background-color: #f0f0f0; /* Set a background color of your choice (light) */
+    color: #333; /* Set text color (dark) */
+  }
+  
+  /* Style <td> inside the <tfoot> */
+  tfoot td {
+    text-transform: uppercase; /* Convert text to uppercase */
+    background-color: #333; /* Set a background color of your choice (dark) */
+    color: #f0f0f0; /* Set text color (light) */
+  }
+  
+  /* Q16. Style any <dt> element */
+
+  dt{
+    /* a. Make it bold */
+    font-weight: bold;
+  }
+
+
+/* Q17.  Style any <footer> element:
+a. Change the font size to be 80% of the default font size or of the font size of the body
+b. Align your text to the centre of the table
+c. Add 1px of padding from the top/bottom and 0 from the right/left */
+
+footer{
+    font-size: 80%;
+    text-align: center;
+    padding: 1px 0;
+}
+
+iframe{
+    /* used to make the <iframe> element a block-level element. By default, <iframe> is an
+    inline element, so setting it to block-level allows you to center it horizontally and apply margins effectively. */
+    display: block;
+
+    margin: 10px auto;
+}
+
+
+fieldset{
+    width: 500px;
+    margin: 20px auto;
+    border: 2px saddlebrown;
+    background-color: #adff2f;
+}
+
+legend{
+    font-style: italic;
+    background-color: #6633cc;
+    color: #2fd2ff;
+}
+
+/* Style <input> element with type="submit" */
+input[type="submit"] {
+    border: 2px solid #333; /* Set border with a color of your choice */
+    padding: 5px; /* Add padding of 5px for all sides */
+    background-color: #f0f0f0; /* Set a background color of your choice */
+    color: #333; /* Set text color of your choice */
+  }
+
+  
+/* Style <input> element with type="submit" on hover */
+input[type="submit"]:hover {
+background-color: #333; /* Change the background color on hover to a different color */
+color: #fff; /* Change the text color on hover to a different color */
+cursor: pointer; /* Change the cursor to a hand icon */
+}
