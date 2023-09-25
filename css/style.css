@@ -97,7 +97,7 @@ element)*/
             nav li{
 
 /*      a. To be displayed horizontally (Remember that <li> is a block-level element) */
-                display: flex;
+                display: inline-block;
 /*      b. Adding margin of 40px to the right of each list item */
                 margin-right: 40px;
 
@@ -219,7 +219,7 @@ table td, table th{
     padding: 2px 5px; /* Add padding of 2px from top/bottom and 5px from left/right */
 
     /* c. Any background colour (light/dark */
-    background-color: #808080; /* Set a background color of your choice */
+    background-color: #b87800; /* Set a background color of your choice */
 }
 
 
@@ -231,7 +231,7 @@ c. Any colour (dark/light) */
 /* Style <th> inside any table */
 table th {
     text-transform: uppercase; /* Convert text to uppercase */
-    background-color: #f0f0f0; /* Set a background color of your choice (light) */
+    background-color: #b87800; /* Set a background color of your choice (light) */
     color: #333; /* Set text color (dark) */
   }
   
@@ -274,7 +274,7 @@ fieldset{
     width: 500px;
     margin: 20px auto;
     border: 2px saddlebrown;
-    background-color: #adff2f;
+    background-color: #b87800;
 }
 
 legend{
